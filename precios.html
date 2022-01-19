@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulos y parrafos</title>
+
+
+    <!--para colorear los td-->
+    <style>
+        table{
+            font-family: sans-serif;
+            border: 2px solid grey;
+            border-collapse: collapse;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        caption{
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        th,
+        td{
+            border: 2px solid grey;
+            padding: .5rem;            
+        }
+
+        td:first-child,
+        th,
+        tfoot {
+            background-color: lightgreen;
+        }
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+    
+    <header>       
+     
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio 1</a></li>
+                <li><a href="locales.html">Impresora mas cercana</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="registrar.html">Registrarse</a></li>
+                
+            </ul>       
+        </nav>
+
+        
+    </header>
+    
+    <main>
+        <!--
+
+        <h1>Impresora Online: Precios</h1>
+        <h2>Blanco y negro : </h2>
+        <h3>Hoja A4 = $4 : </h3>
+        <h3>Hoja Oficio = $5 : </h3>
+        
+        <h2>A Color : </h2>
+        <h3>Hoja A4 = $6 : </h3>
+        <h3>Hoja Oficio = $7 : </h3>
+        -->
+        <h1>Precios </h1>
+        <br>
+        <br>
+        <br>
+
+    
+        <table>
+            <caption> Precios Actualizados por cantidad de hojas </caption>
+    
+            <colgroup>
+                <col span="5">   <!--primera columna-->
+                <col>  <!--agrupa 5 columnas-->
+                
+            </colgroup>
+    
+            <thead>
+                <tr>
+                    <th>Tipo\cantidad</th>
+                    <th>1-10</th>
+                    <th>11-50</th>
+                    <th>51-100</th>
+                    <th>101-200</th>
+                    <th>201-N</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>A4-ByN-Simple</td>
+                <td>4</td>
+                <td>3.50</td>
+                <td>3</td>
+                <td>2,50</td>
+                <td>2</td>
+            </tr>
+    
+            <tr>
+                <td>A4-Color-Simple</td>
+                <td>6</td>
+                <td>5,50</td>
+                <td>5</td>
+                <td>4,50</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>A4-Byn-Doble</td>
+                <td>3,50</td>
+                <td>3,00</td>
+                <td>2,50</td>
+                <td>2,00</td>
+                <td>1,50</td>
+            </tr>
+            
+            <tr>
+                <td>A4-Color-Doble</td>
+                <td>5,50</td>
+                <td>5,00</td>
+                <td>4,50</td>
+                <td>4,00</td>
+                <td>3,50</td>
+            </tr>
+
+            <tr>
+                <td>Oficio-ByN</td>
+                <td>5</td>
+                <td>4,50</td>
+                <td>4,00</td>
+                <td>3,50</td>
+                <td>3,00</td>
+            </tr>
+            
+            <tr>
+                <td>Oficio-Color</td>
+                <td>6</td>
+                <td>5,50</td>
+                <td>5,00</td>
+                <td>4,50</td>
+                <td>4,00</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <!--ahora la celda ocupara 5 columnas -->
+                <td colspan="6">Precios a la fecha Miercoles 8 de Septiembre 2021</td>                
+            </tr>
+        </tfoot>
+    
+        </table>
+
+        
+        <p> ***************PONER ACA UNA BARRA QUE INGRESANDO CANTIDAD CALCULA EL PRECIO TOTAL( PROX. QUE SOLO INGRESANDO EL ARCHIVO LO CALCULE :)  *************** </p>
+              
+
+    </main>
+
+
+    
+    <footer>
+        Printers World 2021
+    </footer>
+
+</body>
+</html>

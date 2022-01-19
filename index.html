@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulos y parrafos</title>
+</head>
+
+<body>
+    
+    <header>           
+ 
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio </a></li>
+                <li><a href="locales.html">Impresora mas cercana</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="registrar.html">Registrarse</a></li>
+                
+            </ul>       
+        </nav>        
+        
+    </header>
+    
+    <main>
+        
+        <h1>Impresora Online: Tu impresora en todos lados</h1>
+        <h2>Ingresa el archivo que quieras imprimir: </h2>
+        <p>Aqui podras ingresar el archivo que necesites imprimir, indicando que tamaño de Hoja( A4, Oficio, etc ), color, y cantidad</p>
+        <br>
+
+        <form  action="enviar.php" method="post" enctype="multipart/form-data">
+            <fieldset >
+            <br><br>
+
+            <!--para cargar un archivo al enviar el formulario-->
+            <input type="file" id="adjunto" name="adjunto" required>
+            <br><br><br><br>
+
+             <form >
+            <h3>Tipo de impresion</h3>
+            <label >Blanco y Negro
+            <input type="radio" name="gender" checked >   <!--indicamos blanco y negro por que es lo mas comun -->
+            </label>
+             <br>
+            <label >Color 
+            <input type="radio" name="gender">
+            </label>
+            </form>       
+
+            <form >
+            <h3>Simple o Doble Faz</h3>
+            <label >Simple Faz
+            <input type="radio" name="gender" checked >   
+            </label>
+             <br>
+            <label >Doble Faz
+            <input type="radio" name="gender">
+            </label>
+            </form>
+
+            <form >
+                <h3>Forma de envio</h3>
+                <label >Paso a retirar por el local: aaaa
+                <input type="radio" name="gender" checked >   
+                </label>
+                 <br>
+                <label >Enviar a mi domicilio
+                <input type="radio" name="gender">
+                </label>
+            </form>
+            
+            <h3> Cantidad de copias a imprimir </h3>    
+            <form >
+            <select name="lenguaje">
+            <option value="1">1 (una copia)</option>
+            <option value="2">2 (dos copias)</option>
+            <option value="3">3 (tres copias</option>
+            </select>
+            </form>
+
+            <br><br>
+            
+            <input type="submit" value="Enviar">
+            
+            
+            <br><br>
+            <!--barra de progreso -->
+            <label for="fuel"> Imprimiendo....</label>         
+            <meter id="fuel" min="0" max="100" value="70" low="30" high="75" optimum="50" >
+            </meter>
+            <br><br><br><br>
+            
+            </fieldset> 
+                
+        </form>
+
+        <h3>Podes subir tu archivo para imprimir y tener un presupuesto y precio al instante. Tambien podes elegir si queres que te lo enviemos a tu domicilio o si 
+            queres pasar a retirarlo por el local mas cercano a tu casa.  
+        </h3>
+
+    </main>
+
+
+    
+    <footer>
+        Printers World 2021
+    </footer>
+
+</body>
+</html>
